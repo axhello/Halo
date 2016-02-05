@@ -13,8 +13,10 @@
                         <span class="label label-warning"><i class="fa fa-cog fa-spin"></i></i>&nbsp;<a href="#"><?php $this->category(','); ?></a></span>
                         <span class="label label-success"><i class="fa fa-user"></i>&nbsp;<a href="#"><?php $this->author(); ?></a></span>
                     </div>
-                    <figure class="">
-                        <img src="<?php $this->options->themeUrl('images/mirai.jpg'); ?>" class="img-responsive img-rounded img"  alt="Mirai.jpg">
+                    <figure>
+                        <a href="<?php $this->permalink() ?>">
+                            <?php showThumbnail($this); ?>
+                        </a>
                     </figure>
                     <div class="article-content">
                         <?php $this->content(); ?>

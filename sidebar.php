@@ -4,7 +4,7 @@
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
-                    <a class="pr" href="#">Visit your profile!</a> 欢迎来到我的网站
+                    <a class="pr" href="#">Welcome to my website!</a> 欢迎来到我的网站
                 </div>
                 <div class="panel">
                     <form class="search-form" method="post" action="">

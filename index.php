@@ -1,11 +1,11 @@
 <?php
 /**
- * xxx主题
+ * Halo主题
  * 
- * @package xxx主题
- * @author xxx&ooo
+ * @package Halo主题
+ * @author Axhello
  * @version 1.0.0
- * @link 
+ * @link https://ciyuanai.net
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

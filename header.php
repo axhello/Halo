@@ -10,8 +10,8 @@
         'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?>
     </title>
-    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="<?php $this->options->themeUrl('css/font-awesome.min.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/themes.css'); ?>" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Bootstrap</a>
+                <a class="navbar-brand" href="/">Hola Theme</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
