@@ -7,6 +7,7 @@
     <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/bootstrap-hover-dropdown.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php $this->options->themeUrl('js/icheck.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/themes.js'); ?>"></script>
     <?php $this->footer(); ?>
 </body>

@@ -20,7 +20,7 @@
                   </div>
                   <div class="media-body">
                     <h4 class="media-heading"><?php $comments->author(); ?>
-                    on <?php $comments->date('F jS, Y'); ?>
+                        <strong>on <?php $comments->date('Y年m月j日'); ?></strong>
                     </h4>
                         <?php $comments->content(); ?>
                   </div>

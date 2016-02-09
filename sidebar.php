@@ -1,5 +1,5 @@
 
-<div class="col-md-4">
+        <div class="col-md-4">
                 <div class="alert alert-warning alert-dismissible fade in" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">×</span>
@@ -26,10 +26,10 @@
                         <?php while($comments->next()): ?>
                              <li class="list-group-item">
                                 <span class="author-avatar">
-                                    <?php $comments->gravatar(); ?>
+                                    <?php $comments->gravatar(50); ?>
                                 </span>
                                 <span class="comment-log">
-                                    <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt(23, '...'); ?></a>
+                                    <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt('24', '...'); ?></a>
                                 </span>
                             </li>
                         <?php endwhile; ?>
@@ -49,7 +49,7 @@
                             <?php if ($article->sequence <= 8): ?>
                                 <li class="list-group-item">
                                     <span class="post-title">
-                                        <a href="<?php $article->permalink() ?>"><?php $article->title('25', '...') ?></a>
+                                        <a href="<?php $article->permalink() ?>"><?php $article->title('45', '...') ?></a>
                                     </span>
                                     <span class="badge"><?php $article->commentsNum() ?></span>
                                 </li>

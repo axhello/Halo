@@ -11,7 +11,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php'); ?>
 
-    <div class="container">
+    <div id="bodyer" class="container">
         <div class="row">
             <div class="col-md-8">
             <?php while($this->next()): ?>

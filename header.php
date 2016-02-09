@@ -13,10 +13,11 @@
     <link href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/font-awesome.min.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/themes.css'); ?>" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-    <script src="http://cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <?php if ($this->options->bgUrl): ?>
+        <style>
+            body.custom-background{ background-image: url(<?php $this->options->bgUrl();?>); }
+        </style>
+    <?php endif; ?>
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
@@ -52,6 +53,7 @@
             </div>
             <div id="if-fixed" class="pull-right">
                 <i class="fa fa-lg fa-thumb-tack"></i>
+                <input type="checkbox" checked>
             </div>
         </div>
     </nav><!--/.nav-collapse -->

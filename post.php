@@ -1,6 +1,6 @@
 <?php $this->need('header.php'); ?>
 
-    <div class="container">
+    <div id="bodyer" class="container">
         <div class="row">
             <div class="col-md-8">
                 <article class="wallpaper">

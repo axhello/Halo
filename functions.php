@@ -1,6 +1,11 @@
 <?php 
 error_reporting(E_ALL ^ E_NOTICE);
 
+function themeConfig($form) {
+    $bgUrl = new Typecho_Widget_Helper_Form_Element_Text('bgUrl', NULL, NULL, _t('网站背景地址'), _t('在这里填入一个图片URL地址, 为网站添加一个背景图片'));
+    $form->addInput($bgUrl);
+}
+
 function showThumbnail($widget)
 { 
     // 当文章无图片时的默认缩略图

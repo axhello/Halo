@@ -1,7 +1,7 @@
 <?php $this->need('header.php'); ?>
 
 	<?php if ($this->have()): ?>
-	<div class="container">
+	<div id="bodyer" class="container">
         <div class="row">
             <div class="col-md-8">
 				<div class="alert alert-info alert-dismissible fade in" role="alert">
@@ -42,7 +42,7 @@
                 </section>
             <?php endwhile; ?>
             <?php else: ?>
-            <div class="container">
+            <div id="bodyer" class="container">
 			    <div class="row">
 			        <div class="col-md-8">
 			            <div class="alert alert-danger alert-dismissible fade in" role="alert">
