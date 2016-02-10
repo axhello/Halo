@@ -18,7 +18,7 @@ ins:hover{
 }
 body.nav-fixed{
     position: relative;
-    padding-top: 54px;
+    padding-top: 50px;
 }
 .custom-background {
     background-repeat: no-repeat;
@@ -49,6 +49,8 @@ a:visited {
 /*Navbar*/
 .navbar{
     margin-bottom: 0;
+    border-radius: 0 !important;
+    border:0;
 }
 .navbar-fixed-top {
     top: 0;

@@ -25,7 +25,7 @@ $(document).ready(function() {
     var ifFixed = navfix.find('input[type="checkbox"]');
     var storage = window.localStorage;
 
-    storage.setItem('ifFixed', 'fixed');
+    // storage.setItem('ifFixed', 'fixed');
     // 将这行代码注释去掉可以实现网站头部默认钉住。
 
     if (!storage.getItem('ifFixed')) {

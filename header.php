@@ -21,7 +21,7 @@
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
-<body class="custom-background">
+<body class="custom-background nav-fixed">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">

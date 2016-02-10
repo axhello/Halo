@@ -2,7 +2,7 @@
 /**
  * Halo主题
  * 
- * @package Halo主题
+ * @package Halo
  * @author Axhello
  * @version 1.0.0
  * @link https://ciyuanai.net
