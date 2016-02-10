@@ -6,29 +6,36 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+
 * {
     word-break: break-all;
     word-wrap: break-word;
 }
-input[type=file]:hover, 
-input[type=checkbox]:hover, 
+
+input[type=file]:hover,
+input[type=checkbox]:hover,
 input[type=radio]:hover,
-ins:hover{
+ins:hover {
     outline: 0;
 }
-body.nav-fixed{
+
+body.nav-fixed {
     position: relative;
     padding-top: 50px;
 }
+
 .custom-background {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-/*    background: -webkit-linear-gradient(0deg,#fe5187,#8782c4,#16d4ac);
+    /*background-image: url(../images/index.jpg);*/
+    background: -webkit-linear-gradient(0deg,#fe5187,#8782c4,#16d4ac);
     background: linear-gradient(90deg,#fe5187,#8782c4,#16d4ac); 
-    box-shadow: 0 2px 5px 1px rgba(39,50,58,.3);*/
+    box-shadow: 0 2px 5px 1px rgba(39,50,58,.3);
 }
+
+
 }
 a:hover {
     text-decoration: none;
@@ -42,15 +49,16 @@ a:visited {
     text-decoration: underline;
 }
 @media screen and (max-width: 1163px) {
-    #if-fixed{
+    #if-fixed {
         display: none;
     }
 }
+
 /*Navbar*/
-.navbar{
+.navbar {
     margin-bottom: 0;
     border-radius: 0 !important;
-    border:0;
+    border: 0;
 }
 .navbar-fixed-top {
     top: 0;
@@ -63,11 +71,9 @@ a:visited {
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
-
 .nav>li>a {
     color: #fff!important;
 }
-
 .navbar-inverse .navbar-nav>li:focus,
 .navbar-inverse .navbar-nav>li:hover {
     background-color: #3B444A;
@@ -78,7 +84,7 @@ a:visited {
     right: 20px;
     color: #fff;
 }
-.nav-fixed .fa-thumb-tack{
+.nav-fixed .fa-thumb-tack {
     color: #0e76a8;
 }
 .icheckbox {
@@ -101,90 +107,79 @@ a:visited {
     margin-bottom: 30px;
     /*border-top-left-radius: 6px;*/
     /*border-top-right-radius: 6px;*/
+    
     background-color: #ffffff;
     -webkit-box-shadow: -1px -1px 10px rgb(48, 103, 171);
     -moz-box-shadow: -1px -1px 10px rgb(48, 103, 171);
     box-shadow: -1px -1px 10px rgb(48, 103, 171);
 }
-
 .article-content {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
 .img {
     margin: 1rem auto;
     border: 1px solid #e5e5e5;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
 .img:hover {
     border: 1px solid #e74c3c;
     opacity: 0.8;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
 .article {
     position: relative;
 }
-
+.article-title {
+    padding-left: 30px;
+}
 .article-date {
     background-color: #e74c3c;
     border-color: #e74c3c;
     position: absolute;
     height: 70px;
     width: 70px;
-    border-radius: 100px;
-    left: 190px;
-    top: 50px;
+    border-radius: 35px;
     color: white;
-    padding-top: 10px;
     box-shadow: 1px 2px 7px rgb(0, 0, 0);
-    transform: scale(0);
-    transition: all 1s ease-in-out;
+    top: -20px;
+    left: -17px;
 }
-
-.article-date span.month,
-.article-date span.day {
+.article-date>.month,
+.article-date>.day {
+    height: 35px;
     text-align: center;
-    display: block;
+    line-height: 35px;
+    font-size: 18px;
 }
-
 span.month {
     font-size: 16px
 }
-
 span.day {
     font-size: 25px
 }
-
 .article-title h1 {
     font-size: 32px;
     margin: 0 auto;
     text-align: center;
 }
-
 .article-title h1 a:visited {
     text-decoration: none;
 }
-
 .article-tag {
     text-align: center;
     line-height: 20px;
     margin: 20px;
 }
-
 span.label {
     display: inline-block;
     font-size: 90%;
 }
-
 span.label a {
     color: #fff;
 }
-
 .panel-box {
     padding: 10px 10px
 }
@@ -226,17 +221,14 @@ span.label a {
 .nav-tabs {
     border: none;
 }
-
 .nav-tabs>li>a {
     margin-right: 8px;
     border: none;
     border-radius: 5px;
 }
-
 .nav-tabs>li>a:hover {
     border-color: transparent;
 }
-
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover .nav-tabs>li>a {
@@ -245,18 +237,15 @@ span.label a {
     color: #fff!important;
     border-radius: 5px;
 }
-
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
     background-color: #e74c3c;
     border: none;
 }
-
 .tab-pane {
     padding: 10px 5px;
 }
-
 .article-content blockquote {
     border-left-color: #1b809e;
     padding: 20px;
@@ -268,15 +257,12 @@ span.label a {
     border-radius: 3px;
 }
 
-
 /*Comments*/
-
 #comments {
     background: #fff;
     padding: 2rem;
     margin-bottom: 3rem;
 }
-
 .panel.toggled .comment-list {
     max-height: 0;
     overflow: hidden;
@@ -286,17 +272,15 @@ span.label a {
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
-
 .post-title {
     margin: 0;
     display: inline-block;
 }
-
 #comment_list {
     list-style: none;
     padding: 0;
 }
-.media:first-child{
+.media:first-child {
     margin-top: 15px;
 }
 .media-left img {
@@ -312,30 +296,24 @@ span.label a {
     width: 100%;
 }
 
-
 /*Sidaber*/
-
 .panel {
     border-color: #d3e0e9;
     transition: all .5s;
 }
-
 .search-form {
     margin: 0;
 }
-
 .panel-close {
     float: right;
     margin: 4px 0px 0px 5px;
     cursor: pointer;
 }
-
 .panel-toggle {
     float: right;
     margin: 4px 0px 0px 5px;
     cursor: pointer;
 }
-
 .panel.toggled {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -345,38 +323,31 @@ span.label a {
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-
 .author-avatar .avatar {
     margin-right: .8rem;
 }
 
-
 /*Footer*/
-
 .text-muted {
     color: #818a91;
     padding: 3rem;
     background: #fff;
 }
-
 .page-nav {
     padding-top: 2rem;
     padding-bottom: 3rem;
     text-align: center;
 }
-
 .page-nav ol,
 .page-nav li {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-
 .page-nav .current {
     background-color: #fff;
     color: #fff;
 }
-
 .page-nav ol li {
     display: inline-block;
     margin-left: 3px;
@@ -389,32 +360,27 @@ span.label a {
     border-radius: 50%;
     border: 1px solid #fff;
 }
-
 .page-nav ol li:hover {
     background-color: #fff;
     color: #fff;
 }
-
 .page-nav ol li a {
     padding: 0 11px;
 }
-
 .list-group-item {
     border: none;
 }
-
 .list-group-item:last-child {
     border-bottom: 1px solid #ddd;
 }
-
 .badge {
     background-color: #F33838;
 }
-
 .widget-list {
     padding: 0;
     list-style: none;
 }
+
 /* iCheck plugin Square skin, blue
 ----------------------------------- */
 .icheckbox_square-blue,
@@ -430,43 +396,44 @@ span.label a {
     border: none;
     cursor: pointer;
 }
-
 .icheckbox_square-blue {
     background-position: 0 0;
 }
-    .icheckbox_square-blue.hover {
-        background-position: -24px 0;
-    }
-    .icheckbox_square-blue.checked {
-        background-position: -48px 0;
-    }
-    .icheckbox_square-blue.disabled {
-        background-position: -72px 0;
-        cursor: default;
-    }
-    .icheckbox_square-blue.checked.disabled {
-        background-position: -96px 0;
-    }
-
+.icheckbox_square-blue.hover {
+    background-position: -24px 0;
+}
+.icheckbox_square-blue.checked {
+    background-position: -48px 0;
+}
+.icheckbox_square-blue.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+.icheckbox_square-blue.checked.disabled {
+    background-position: -96px 0;
+}
 .iradio_square-blue {
     background-position: -120px 0;
 }
-    .iradio_square-blue.hover {
-        background-position: -144px 0;
-    }
-    .iradio_square-blue.checked {
-        background-position: -168px 0;
-    }
-    .iradio_square-blue.disabled {
-        background-position: -192px 0;
-        cursor: default;
-    }
-    .iradio_square-blue.checked.disabled {
-        background-position: -216px 0;
-    }
+.iradio_square-blue.hover {
+    background-position: -144px 0;
+}
+.iradio_square-blue.checked {
+    background-position: -168px 0;
+}
+.iradio_square-blue.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+.iradio_square-blue.checked.disabled {
+    background-position: -216px 0;
+}
 
 /* HiDPI support */
-@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+@media (-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi),
+(min-resolution: 1.25dppx) {
     .icheckbox_square-blue,
     .iradio_square-blue {
         background-image: url(../images/blue@2x.png);

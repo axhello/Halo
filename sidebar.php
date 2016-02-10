@@ -49,7 +49,7 @@
                             <?php if ($article->sequence <= 8): ?>
                                 <li class="list-group-item">
                                     <span class="post-title">
-                                        <a href="<?php $article->permalink() ?>"><?php $article->title('45', '...') ?></a>
+                                        <a href="<?php $article->permalink() ?>"><?php $article->title('20', '...') ?></a>
                                     </span>
                                     <span class="badge"><?php $article->commentsNum() ?></span>
                                 </li>

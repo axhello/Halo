@@ -41,12 +41,17 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
                             <li><a href="#">Separated link</a></li>
                             <li><a href="#">One more separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <?php if($this->user->hasLogin()): ?>
+                            <li><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a></li>
+                            <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
+                            <?php else: ?>
+                            <li><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a></li>
+                            <?php endif; ?>
                         </ul>
                     </li>
                 </ul>
