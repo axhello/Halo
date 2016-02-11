@@ -21,6 +21,7 @@ body.nav-fixed{
     padding-top: 50px;
 }
 .custom-background {
+    background-image: url(../images/index.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -292,26 +293,46 @@ span.label a {
     display: inline-block;
 }
 
-#comment_list {
+.comment-list{
     list-style: none;
     padding: 0;
+    margin-top: 1rem;
 }
-.media:first-child{
-    margin-top: 15px;
+.comment-list li{
+    display: inline-block;
+    margin: .5rem;
 }
-.media-left img {
+.comment-author{
+    display: inherit;
+}
+.comment-author span img.avatar{
     border-radius: 50%;
+    float: left;
 }
-.media-heading strong {
-    font-size: 12px;
-    color: #bbb;
+.comment-author cite.fn {
+    font-style: normal;
+    margin-left: .8rem;
+    font-size: 16px;
+    font-weight:bold;
+}
+.comment-meta{
+    margin-left: 5rem;
+    margin-top: -2rem;
+}
+.comment-content{
+    margin-left: 5rem;
+}
+.comment-reply{
+    display: inherit;
+}
+.cancel-comment-reply{
+    display: inherit;
 }
 .hidden {
     max-height: 0;
     overflow: hidden;
     width: 100%;
 }
-
 
 /*Sidaber*/
 

@@ -11,7 +11,7 @@
                         <div class="input-group">
                             <input type="text" name="s" class="form-control" placeholder="Search for...">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
+                                <button class="btn btn-default" type="submit">Go!</button>
                             </span>
                         </div>
                     </form>
@@ -29,7 +29,7 @@
                                     <?php $comments->gravatar(50); ?>
                                 </span>
                                 <span class="comment-log">
-                                    <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt('24', '...'); ?></a>
+                                    <a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt('22', '...'); ?></a>
                                 </span>
                             </li>
                         <?php endwhile; ?>
@@ -49,7 +49,7 @@
                             <?php if ($article->sequence <= 8): ?>
                                 <li class="list-group-item">
                                     <span class="post-title">
-                                        <a href="<?php $article->permalink() ?>"><?php $article->title('45', '...') ?></a>
+                                        <a href="<?php $article->permalink() ?>"><?php $article->title('38', '...') ?></a>
                                     </span>
                                     <span class="badge"><?php $article->commentsNum() ?></span>
                                 </li>
@@ -61,10 +61,6 @@
                     </div>
                 </div>
                 <div class="panel">
-                    <div class="panel-heading">
-                        <i class="fa fa-heart"></i></i>&nbsp;Likes · View All
-                        <i class="fa fa-times-circle panel-close"></i>
-                    </div>
                     <div class="panel-box">
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">

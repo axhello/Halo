@@ -3,40 +3,17 @@
         <h3 class="post-title"><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
         <i class="fa fa-chevron-circle-up panel-toggle"></i>
     </div>
-    <div class="comment-list">
-        <header class="post-head">
+    <div id="comment-list">
             <?php $this->comments()->to($comments); ?>
             <?php if ($comments->have()): ?>
             
-
-            <div class="comment_list">
-            <?php $this->comments()->to($comments); ?>
-                    <?php while($comments->next()): ?>
-                <div id="<?php $comments->theId(); ?>" class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <?php $comments->gravatar(40); ?>
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading"><?php $comments->author(); ?>
-                        <strong>on <?php $comments->date('Y年m月j日'); ?></strong>
-                    </h4>
-                        <?php $comments->content(); ?>
-                  </div>
-                </div>
-                <div class="comment-reply">
-                    <?php $comments->Reply(); ?>
-                </div>
-                <?php endwhile; ?>
-            </div>
+            <?php $comments->listComments(); ?>
 
             <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>      
             <?php endif; ?>
             <?php if($this->allow('comment')): ?>
-        </header>
     </div> 
-    <div class="post-content">
+    <div class="post-form">
         <div id="<?php $this->respondId(); ?>" class="respond">
             <div class="cancel-comment-reply">
                 <?php $comments->cancelReply(); ?>
