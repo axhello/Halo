@@ -8,14 +8,6 @@ $(document).ready(function() {
         'class': 'img-responsive img-rounded img',
         'max-height': '100%',
     });
-    $('.label.label-danger').click(function(e) {
-        e.preventDefault();
-        $(this).parent().prev().prev().css({
-            'transform': 'scale(1)',
-            'left': '-17px',
-            'top': '-20px'
-        });
-    });
     $('.panel-close').click(function() {
         $(this).parents('.panel').toggle(300);
     });
@@ -24,9 +16,6 @@ $(document).ready(function() {
     var body = jQuery('body');
     var ifFixed = navfix.find('input[type="checkbox"]');
     var storage = window.localStorage;
-
-    // storage.setItem('ifFixed', 'fixed');
-    // 将这行代码注释去掉可以实现网站头部默认钉住。
 
     if (!storage.getItem('ifFixed')) {
 

@@ -17,8 +17,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <?php while($this->next()): ?>
                 <section class="wallpaper clearfix article">
                     <div class="article-date">
-                        <span class="month"><?php $this->date('n') ?>月</span>
-                        <span class="day"><?php $this->date('d') ?></span>
+                        <div class="month"><?php $this->date('n') ?>月</div>
+                        <div class="day"><?php $this->date('d') ?></div>
                     </div>
                     <div class="article-title">
                         <h1><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>

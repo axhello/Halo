@@ -22,7 +22,7 @@
                         <i class="fa fa-times-circle panel-close"></i>
                     </div>
                     <ul class="list-group">
-                        <?php $this->widget('Widget_Comments_Recent','ignoreAuthor=true')->to($comments); ?>
+                        <?php $this->widget('Widget_Comments_Recent','pageSize=8&ignoreAuthor=true')->to($comments); ?>
                         <?php while($comments->next()): ?>
                              <li class="list-group-item">
                                 <span class="author-avatar">
@@ -35,7 +35,7 @@
                         <?php endwhile; ?>
                     </ul>
                     <div class="panel-footer">
-                        Dave really these nerds, no one  why though.
+                        Show only the latest 8 comments.
                     </div>
                 </div>
                 <div class="panel">
@@ -44,9 +44,9 @@
                         <i class="fa fa-times-circle panel-close"></i>
                     </div>
                     <ul class="list-group">
-                     <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=8&type=category')->to($article); ?>
+                     <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=10&type=category')->to($article); ?>
                         <?php while ($article->next()): ?>
-                            <?php if ($article->sequence <= 8): ?>
+                            <?php if ($article->sequence <= 10): ?>
                                 <li class="list-group-item">
                                     <span class="post-title">
                                         <a href="<?php $article->permalink() ?>"><?php $article->title('38', '...') ?></a>
@@ -57,7 +57,7 @@
                         <?php endwhile; ?>
                     </ul>
                     <div class="panel-footer">
-                        Dave really likes nerds, no one why though.
+                        Show only the latest 10 articles.
                     </div>
                 </div>
                 <div class="panel">
@@ -74,10 +74,12 @@
                                     <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="sidebar-tags">
+                                    <ul class="tags-list">
                                     <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
                                     <?php while($tags->next()): ?>
-                                    <span><a style="color:rgb(<?php echo(rand(0,255)); ?>,<?php echo(rand(0,255)); ?>,<?php echo(rand(0,255)); ?>)" href="<?php $tags->permalink(); ?>" title='<?php $tags->name(); ?>'><?php $tags->name(); ?></a></span>
+                                    <li><a style="color:rgb(<?php echo(rand(0,255)); ?>,<?php echo(rand(0,255)); ?>,<?php echo(rand(0,255)); ?>)" href="<?php $tags->permalink(); ?>" title='<?php $tags->name(); ?>'><?php $tags->name(); ?></a></li>
                                     <?php endwhile; ?>
+                                    </ul>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="sidebar-links">
                                     <a href="#">Link</a>

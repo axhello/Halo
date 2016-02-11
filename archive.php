@@ -17,10 +17,6 @@
 	            </div>
 			<?php while($this->next()): ?>
                 <section class="wallpaper clearfix article">
-                    <div class="article-date">
-                        <span class="month"><?php $this->date('n') ?>月</span>
-                        <span class="day"><?php $this->date('d') ?></span>
-                    </div>
                     <div class="article-title">
                         <h1><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
                     </div>
