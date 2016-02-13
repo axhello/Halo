@@ -63,17 +63,17 @@
                 <div class="panel">
                     <div class="panel-box">
                             <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#sidebar-categories" aria-controls="home" role="tab" data-toggle="tab">分类目录</a></li>
-                                <li role="presentation"><a href="#sidebar-tags" aria-controls="profile" role="tab" data-toggle="tab">2333</a></li>
-                                <li role="presentation"><a href="#sidebar-links" aria-controls="messages" role="tab" data-toggle="tab">友情链接</a></li>
+                            <ul class="filter-toggle-buttons">
+                                <li class="active"><a href="#sidebar-categories" data-toggle="tab">分类目录</a></li>
+                                <li><a href="#sidebar-tags" data-toggle="tab">Tag标签</a></li>
+                                <li><a href="#sidebar-links" data-toggle="tab">友情链接</a></li>
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="sidebar-categories">
+                                <div class="tab-pane active" id="sidebar-categories">
                                     <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="sidebar-tags">
+                                <div class="tab-pane" id="sidebar-tags">
                                     <ul class="tags-list">
                                     <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
                                     <?php while($tags->next()): ?>
@@ -81,8 +81,14 @@
                                     <?php endwhile; ?>
                                     </ul>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="sidebar-links">
-                                    <a href="#">Link</a>
+                                <div class="tab-pane" id="sidebar-links">
+                                    <div class="friend">
+                                        <ul>
+                                            <li><a href="#">friend-link</a></li>
+                                            <li><a href="#">friend-link</a></li>
+                                            <li><a href="#">friend-link</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                     </div>

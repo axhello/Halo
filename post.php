@@ -18,19 +18,21 @@
                         <div class="abh_box">
                             <!-- Nav tabs -->
                             <ul class="abh_tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#about" role="tab" data-toggle="tab">About</a></li>
-                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                                <li class="active"><a href="#about" data-toggle="tab">About</a></li>
+                                <li><a href="#messages" data-toggle="tab">Messages</a></li>
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="about">
+                                <div class="tab-pane active" id="about">
                                     <div class="my-avatar">
-                                        <?php $this->author->gravatar(); ?>
+                                        <?php $this->author->gravatar(50); ?>
                                     </div> Lorem ipsum dolor sit amet consectetur.
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile">lol</div>
-                                <div role="tabpanel" class="tab-pane" id="messages">2333</div>
+                                <div class="tab-pane" id="messages">
+                                    <div class="messages">
+                                        <p>233333333333333333333</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
