@@ -83,11 +83,7 @@
                                 </div>
                                 <div class="tab-pane" id="sidebar-links">
                                     <div class="friend">
-                                        <ul>
-                                            <li><a href="#">friend-link</a></li>
-                                            <li><a href="#">friend-link</a></li>
-                                            <li><a href="#">friend-link</a></li>
-                                        </ul>
+                                       
                                     </div>
                                 </div>
                             </div>

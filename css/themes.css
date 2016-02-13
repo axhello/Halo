@@ -418,15 +418,16 @@ span.label a {
     list-style: none;
 }
 .widget-list li{
-    padding: .5rem;
-    margin: 1rem auto;
-    transition: all .3s;
+    position: relative;
+    display: block;
 }
-.widget-list li:hover {
-    background: #e74c3c;
-    color: #fff;
+.widget-list li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
 }
 .widget-list li:hover a{
+    background: #e74c3c;
     color: #fff;
     font-weight: 500;
 }
